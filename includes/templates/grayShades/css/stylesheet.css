@@ -1,0 +1,979 @@
+/**
+ * Main CSS Stylesheet
+ *
+ * @package templateSystem
+ * @copyright Copyright 2003-2007 Zen Cart Development Team
+ * @copyright Portions Copyright 2003 osCommerce
+ * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
+ * @version $Id: stylesheet.css 5952 2007-03-03 06:18:46Z drbyte $
+ * JM 2013-05-28
+Primary selected colors:
+9999CC bright blue
+FFEC8B yellow
+F0F8FF very light blue
+844242 redish/purple
+99999C slate blue
+989898 slate blue
+7C7C99 main background, middle blue
+993333 alert (almost white)
+5B5B5B dark borders (dk gray-blue)
+323285  side-bar box titles
+181818 charcoal (nav bars)
+ */
+
+body {
+	margin: 0;
+	font-family: baskerville, arial, helvetica, sans-serif;
+	font-size: 12pt;
+	color: #000000;
+	background-color: #FFFFFF;
+	}
+
+a img {border: none; }
+
+a:link, #navEZPagesTOC ul li a {
+/*should be #9999CC depending if bar is dark or light*/
+	color: #5B5B5B;
+	text-decoration: none;
+	}
+a:visited {
+/*should be #9999CC depending if bar is dark or light*/
+	color: #5B5B5B;
+	text-decoration: none;
+	}	 
+a:hover, #navEZPagesTOC ul li a:hover, #navMain ul li a:hover, #navSupp ul li a:hover, #navCatTabs ul li a:hover {
+	color: #FFEC8B;
+	}
+a:active {
+	color: #000000;
+	}
+#navEZPagesTop a:link, #navEZPagesTop a:visited { 
+	color: #FFFFFF; 
+	text-decoration: none; 
+}
+h1 {
+	font-size: 1.5em;
+	text-align: center;
+	}
+h2 {
+	font-size: 1.2em;
+	}
+
+h3 {
+	font-size: 1em;
+	}
+
+h4, h5, h6, LABEL, h4.optionName, LEGEND, ADDRESS, .sideBoxContent, .larger{
+	font-size: 1em;
+	}
+
+.biggerText {
+	font-size: 1.2em;
+	}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0em 0px;
+}
+
+CODE {
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 1em;
+	}
+
+FORM, SELECT, INPUT {
+	display: inline;
+	font-size: 1em;
+	margin: 0.1em;
+	}
+
+TEXTAREA {
+/*	float: left;*/
+	margin: auto;
+	display: block;
+	width: 95%;
+	}
+
+input:focus, select:focus, textarea:focus {
+	background: #F0F8FF;
+	}
+
+FIELDSET {
+	padding: 0.5em;
+	margin: 0.5em 0em;
+	border: 1px solid #cccccc;
+	}
+
+LEGEND {
+	font-weight: bold;
+	padding: 0.3em;
+	}
+
+LABEL, h4.optionName {
+	line-height: 1.5em;
+	padding: 0.2em;
+	}
+
+LABEL.checkboxLabel, LABEL.radioButtonLabel {
+	margin: 0.5em 0.3em;
+	}
+
+#logo, .centerBoxContents, .specialsListBoxContents, .categoryListBoxContents, .centerBoxContentsAlsoPurch, .attribImg {
+	float: left;
+	}
+
+LABEL.inputLabel {
+	width: 11em;
+	float: left;
+	}
+
+LABEL.inputLabelPayment {
+	width: 15em;
+	float: left;
+	}
+
+LABEL.selectLabel, LABEL.switchedLabel, LABEL.uploadsLabel  {
+	width: 12em;
+	float: left;
+	}
+
+P, ADDRESS {
+	padding: 0.5em;
+	}
+ADDRESS {
+	font-style: normal;
+	}
+
+.clearBoth {
+	clear: both;
+	}
+HR {
+	height: 1px;
+	margin: 0em;
+	border: 0em;
+	padding: 0em;
+	}
+HR.small {
+	height: 0px;
+	margin: 0em;
+	border: 0em;
+	padding: 0em;
+	}
+
+/*warnings, errors, messages*/
+.messageStackWarning, .messageStackError, .messageStackSuccess, .messageStackCaution {
+	line-height: 1.8em;
+	padding: 0.2em;
+	border: 1px solid #000000;
+	}
+
+.messageStackWarning, .messageStackError {
+	background-color: #844242;
+	color: #ffffff;
+	}
+
+.messageStackSuccess {
+	background-color: #99999C;
+	color: #000000;
+	}
+
+.messageStackCaution {
+	background-color: #846042;
+	color: #000000;
+	}
+
+/*wrappers - page or section containers*/
+#mainWrapper {
+	background-color: #FFFFFF;
+	text-align: left;
+	width: 100%;
+	vertical-align: top;
+	}
+
+#headerWrapper, #contentMainWrapper, #cartBoxListWrapper, #ezPageBoxList, #cartBoxListWrapper ul, #ezPageBoxList ul, #mainWrapper, #popupAdditionalImage, #popupImage {
+	margin: 0em;
+	padding: 0em;
+	border-collapse:collapse;
+	border-right:0px;
+	}
+#logoWrapper {
+	background-color: #7C7C99;
+	}
+#navColumnOneWrapper {
+	width:100%;
+	}      
+#navColumnTwoWrapper{
+	width:100%;
+	}  
+#mainWrapper {
+	margin: 0em;
+	} 
+#taglineWrapper {
+	background-image:url('http://geeinc.ca/includes/templates/grayShades/images/GrayWideFinal.jpg');
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-color:#FFFFFF;
+	height:192px;
+	margin:0em 0em 0em 15%;
+	border:0em;
+}
+#tagline {
+	}
+	
+#sendSpendWrapper {
+	border: 1px solid #5B5B5B;
+	float: right;
+	margin: 0em 0em 1em 1em;
+	}
+
+.floatingBox, #accountLinksWrapper, #sendSpendWrapper, #checkoutShipto, #checkoutBillto, #navEZPagesTOCWrapper {
+	margin: 0;
+	width: 47%;
+	}
+
+.wrapperAttribsOptions {
+	margin: 0.3em 0em;
+	}
+
+/*navigation*/
+
+.navSplitPagesResult {}
+.navSplitPagesLinks {}
+.navNextPrevCounter {
+	margin: 0em;
+	font-size: 1em;
+	}
+.navNextPrevList {
+	display: inline;
+	white-space: nowrap;
+	margin: 0;
+	padding:  0.5em 0em;
+	list-style-type: none;
+	}
+
+#navMainWrapper, #navCatTabsWrapper {
+	background-color: #F0F8FF;
+	border: 3px solid #323285;
+	font-weight: bold;
+	font-size: .6em;
+	text-align:left;
+	position: relative;
+	width: 12.2%;
+	left: 0px;
+	top: 713px;
+	}
+#navMainWrapper{
+	margin: 0em 0em 0em 1%;
+	}
+#navCatTabsWrapper {
+        margin-top: 0em; 
+        margin-right: 15%;
+        margin-left: 15%;
+        margin-bottom: 0em; 
+	width:70%;
+	border: 1px;
+	border-color:#989898;
+	border-style: none solid none solid;
+}
+#navSuppWrapper
+{
+	margin: 0em;
+	background-color: #FFFFFF;
+	font-weight: bold;
+	color: #ffffff;
+	height: 1%;
+	}
+
+#navMain a {
+	display:block;
+	width:120px;
+}
+#navSupp ul li, #navCatTabs ul li {
+	display: inline;
+	}
+#navMain ul, #navSupp ul{
+	margin: 0em;
+	list-style-type: none;
+	line-height: 1.5em;
+	}
+#navMain ul {
+	overflow:hidden;
+	text-align:left;
+	padding: 0px 0px 0px 0px;
+	border: 3px;
+	border-color: purple;
+	text-decoration: none;
+	color: #000000;
+	white-space: nowrap;
+}
+#navSupp ul{
+	text-align: center;
+	}
+#navCatTabs ul  {
+	list-style-type: none;
+	text-align: center;
+	line-height: 1.5em;
+	}
+#navMain li a {
+	text-decoration: none;
+	padding: 0em;
+	margin: 0em;
+	color: #000000;
+	white-space: nowrap;
+	float: left;
+	background: url('http://www.htmldog.com/examples/images/tabright.gif') top right no-repeat;
+}
+#navMain a {
+	display: block;
+	background: url('http://www.htmldog.com/examples/images/tableft.gif') top left no-repeat;
+	color: #ffc;
+	text-decoration: none;
+	padding: 0.6em 1em 0.25em;
+	}
+#navMain a:hover {
+		color: white;
+	}
+#navMainContent {
+	clear: both;
+	color: white;
+	background: #c60;
+	padding: 1em;
+	}
+#navSupp ul li a, #navCatTabs ul li a {
+	text-decoration: none;
+ 	padding: 0em 0.3em;
+	margin: 0;
+	padding: 0em;
+	margin: 0em;
+	color: #000000;
+	white-space: nowrap;
+	}
+
+#navEZPagesTOCWrapper {
+	font-weight: bold;
+	float: right;
+	height: 1%;
+	border: 1px solid #000000;
+	}
+
+#navEZPagesTOC ul {
+	margin: 0;
+	padding:  0.5em 0em;
+	list-style-type: none;
+	}
+
+#navEZPagesTOC ul li {
+	white-space: nowrap;
+	}
+
+#navEZPagesTOC ul li a {
+	padding: 0em 0.5em;
+	margin: 0;
+	}
+
+#navCategoryIcon, .buttonRow, #indexProductListCatDescription {
+	margin: 0.5em;
+	}
+
+#navMainSearch {
+	
+	}
+
+#navBreadCrumb {
+	background-color: #323285;
+	}
+#navEZPagesBackground {
+	background-color: #7C7C99;
+	}
+#navEZPagesTop {
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-color:#FFFFFF;
+	margin: 0em 0em 0em 15%;
+	padding-left: 2em;
+	border: 0em;
+	background-color: #181818;
+	line-height: 3em;
+	vertical-align: middle;
+	}
+#navEZPagesImage {
+	float: right;
+	/*85% to work with, want 15% of full size*/
+	width: 17.647%;
+	background-color:#FFFFFF;
+	height: 3em;
+	}
+#navBreadCrumb, #navEZPagesTop {
+	font-size: .8em;
+	font-weight: bold;
+	}
+
+#navColumnOne {
+	background-color: #7C7C99;
+	}
+
+#navColumnTwo {
+	background-color: #FFFFFF;
+	}
+
+
+/*The main content classes*/
+#contentColumnMain, #navColumnOne, #navColumnTwo, .centerBoxContents, .specialsListBoxContents, .categoryListBoxContents, .additionalImages, .centerBoxContentsSpecials, .centerBoxContentsAlsoPurch, .centerBoxContentsFeatured, .centerBoxContentsNew, .alert {
+	vertical-align: top;
+	}
+
+/*.content,*/ #productDescription, .shippingEstimatorWrapper {
+	/*font-size: 1.2em;*/
+	padding: 0.5em;
+	}
+
+.alert {
+	color: #993333;
+	margin-left: 0.5em;
+	}
+.advisory {}
+.important {
+	font-weight: bold;
+	}
+.notice {}
+.rating{}
+.gvBal {
+	float: right;
+	}
+.centerColumn, #bannerOne, #bannerTwo,  #bannerThree,  #bannerFour,  #bannerFive,  #bannerSix {
+	padding: 0em;
+	background-color: #FFFFFF;
+	}
+.centerColumn {
+	height:500px;
+	overflow-x:hidden;
+	overflow-y:scroll;
+	border-right-width: 3px;
+	border-right-style: solid;
+	border-right-color: #7C7C99;
+	}
+.littleText, #siteinfoCredits, #siteinfoStatus {
+	font-size: .8em;
+	}
+.smallText, #siteinfoLegal, #siteinfoIP {
+	font-size: .5em;
+	}
+
+#footer_text{
+	font-size: .7em;
+	text-align: center;
+	}
+/*Shopping Cart Display*/
+#cartAdd {
+	float: right;
+	text-align: center;
+	margin: 1em;
+	border: 1px solid #000000;
+	padding: 1em;
+	}
+TR.tableHeading {
+	background-color: #989898;
+	height: 2em;
+	}
+.tableHeading TH {
+	border-bottom: 1px solid #cccccc;
+	}
+
+.tableHeading, #cartSubTotal {
+	background-color: #677B3E;
+	background-color: #9999C;
+	 }
+
+#cartSubTotal {
+	border-top: 1px solid #cccccc;
+	font-weight: bold;
+	text-align: right;
+	line-height: 2.2em;
+	padding-right: 2.5em;
+	}
+
+.tableRow, .tableHeading, #cartSubTotal {
+	height: 2.2em;
+	}
+
+.cartProductDisplay, .cartUnitDisplay, .cartTotalDisplay, .cartRemoveItemDisplay, .cartQuantityUpdate, .cartQuantity, #cartInstructionsDisplay, .cartTotalsDisplay   {
+	padding: 0.5em 0em;
+	}
+
+.cartUnitDisplay, .cartTotalDisplay {
+	text-align: right;
+	padding-right: 0.2em;
+	}
+
+#scUpdateQuantity {
+	width: 2em;
+	}
+
+.cartQuantity {
+	width: 4.7em;
+	}
+
+.cartNewItem {
+	color: #677B3E;
+	color: #323285;
+	position: relative;  /*do not remove-fixes stupid IEbug*/
+	}
+
+.cartOldItem {
+	color: #6A3553;
+	position: relative;   /*do not remove-fixes stupid IEbug*/
+	}
+
+.cartBoxTotal {
+	text-align: right;
+	font-weight: bold;
+	}
+
+.cartRemoveItemDisplay {
+	width: 3.5em;
+	}
+
+.cartAttribsList {
+	margin-left: 1em;
+	}
+
+#mediaManager {
+	width: 50%; 
+	margin: 0.2em;
+	padding: 0.5em;
+	}
+.mediaTitle {
+	float: left;
+	}
+.mediaTypeLink {
+	float: right;
+	}
+
+.normalprice, .productSpecialPriceSale {
+	text-decoration: line-through;
+	}
+
+.productSpecialPrice, .productSalePrice, .productSpecialPriceSale, .productPriceDiscount {
+	color: #844242;
+	}
+
+.orderHistList {
+	margin: 1em;
+	padding: 0.2em 0em;
+	} 
+
+#cartBoxListWrapper ul, #ezPageBoxList ul {
+	list-style-type: none;
+	}
+
+#cartBoxListWrapper li, #ezPageBoxList li, .cartBoxTotal {
+	margin: 0;
+	padding: 0.2em 0em;
+	} 
+
+#cartBoxEmpty, #cartBoxVoucherBalance {
+	font-weight: bold;
+	}
+
+.totalBox {
+	width: 5.5em;
+	text-align: right;
+	padding: 0.2em;
+	}
+
+.lineTitle, .amount {
+	text-align: right;
+	padding: 0.2em;
+	}
+
+.amount {
+	width: 5.5em;
+	}
+
+/*Image Display*/
+#productMainImage, #reviewsInfoDefaultProductImage, #productReviewsDefaultProductImage, #reviewWriteMainImage {
+	margin: 0em 1em 1em 0em ;
+	}
+
+.categoryIcon {}
+
+#cartImage {
+	margin: 0.5em 1em;
+	}
+
+/*Attributes*/
+.attribImg {
+	width: 20%;
+	margin: 0.3em 0em;
+}
+
+.attributesComments {}
+
+/*list box contents*/
+.centerBoxContents, .specialsListBoxContents, .categoryListBoxContents, .additionalImages, .centerBoxContentsSpecials, .centerBoxContentsAlsoPurch, .centerBoxContentsFeatured, .centerBoxContentsNew {
+	margin: 1em 0em;
+	}
+
+/*sideboxes*/
+.columnLeft {}
+
+h3.leftBoxHeading, h3.leftBoxHeading a {
+	font-size: 1em;
+	color: #ffffff;
+	}
+
+.leftBoxHeading{
+	margin: 0em;
+	background-color: #323285;
+	padding: 0.5em 0.2em 0em 0em;
+	} 
+.centerBoxHeading {
+	margin-right: 0.2em;
+	background-color: #7C7C99;
+	padding: 0.5em 0.2em;
+	}
+
+.leftBoxContainer {
+	border: 3px solid #323285;
+	margin: 1.5em .5em 0em .5em;
+	}
+
+.leftBoxContainer a, .leftBoxContainer a:link, .leftBoxContainer a:visited, .leftBoxContainer a:active, .leftBoxContainer a:hover {
+	color: black;
+}
+.leftBoxHeading a, .leftBoxHeading a:link, .leftBoxHeading a:visited, .leftBoxHeading a:active, .leftBoxHeading a:hover {
+	color: white;
+	border: 0em;
+	margin: 0em;
+}
+
+.sideBoxContent {
+	background-color: #ffffff;
+	padding:0em;
+	margin:0em;
+	height: 100%;
+	}
+
+h3.rightBoxHeading, h3.rightBoxHeading a {
+	font-size: 2em;
+	color: #284F4F;
+	}
+
+.rightBoxHeading {
+	margin: 0em;
+	background-color: #6A3553;
+	padding: 0.2em 0em;
+	}
+
+h3.leftBoxHeading a:hover {
+	color: #336666;
+	text-decoration: none;
+	} 
+
+h3.rightBoxHeading a:hover {
+	color: #336666;
+	text-decoration: none;
+	}
+
+.rightBoxContent {
+	background-color: #CCCCCC;
+	margin-bottom: 1em;
+	}
+
+.centeredContent, TH, #cartEmptyText, #cartBoxGVButton, #cartBoxEmpty, #cartBoxVoucherBalance, #navCatTabsWrapper, #navEZPageNextPrev, #bannerOne, #bannerTwo,  #bannerThree,  #bannerFour,  #bannerFive,  #bannerSix,  #siteinfoCredits, #siteinfoStatus, #siteinfoIP, .center, .cartRemoveItemDisplay, .cartQuantityUpdate, .cartQuantity, .cartTotalsDisplay, #cartBoxGVBalance, .leftBoxHeading, .centerBoxHeading,.rightBoxHeading, .productListing-data, .accountQuantityDisplay, .ratingRow, LABEL#textAreaReviews, #productMainImage, #reviewsInfoDefaultProductImage, #productReviewsDefaultProductImage, #reviewWriteMainImage, .centerBoxContents, .specialsListBoxContents, .categoryListBoxContents, .additionalImages, .centerBoxContentsSpecials, .centerBoxContentsAlsoPurch, .centerBoxContentsFeatured, .centerBoxContentsNew, .gvBal, .attribImg {
+	text-align: center;
+	}
+#siteinfoLegal {
+	background-color:#989898;
+	margin-right: 15%;
+	border-left: 15%;
+	text-align:center;
+	}
+#bestsellers .wrapper {
+	margin: 0em 0em 0em 1.5em;
+	}
+
+#bestsellers ol {
+	padding: 0;
+	margin-left: 1.1em;
+	}
+
+#bestsellers li {
+	padding: 0;
+	margin: 0.3em 0em 0.3em 0em;
+	}
+
+#bannerboxHeading {
+	background-color: #677B3E;
+}
+
+#upProductsHeading {
+	text-align: left;
+	}
+
+#upDateHeading {
+	text-align: right;
+	}
+
+/*misc*/
+.back {
+	float: left;
+	}
+
+.forward, #shoppingCartDefault #PPECbutton {
+	float: right;
+	}
+
+.bold {
+	font-weight: bold;
+	}
+
+.rowOdd {
+	background-color: #E5E5E5;
+	height: 1.5em;
+	vertical-align: top;
+	}
+
+.rowEven {
+	background-color: #CBCBCB;
+	height: 1.5em;
+	vertical-align: top;
+	}
+
+.hiddenField {
+	display: none;
+}
+.visibleField {
+	display: inline;
+}
+
+CAPTION {
+	/*display: none;*/
+	}
+
+#myAccountGen li, #myAccountNotify li {
+	margin: 0;
+	} 
+
+.accountTotalDisplay, .accountTaxDisplay {
+	width: 20%;
+	text-align: right;
+	/*vertical-align: top*/
+	}
+
+.accountQuantityDisplay {
+	width: 10%;
+	vertical-align: top
+	}
+
+#siteMapList {
+	width: 90%;
+	float: right;
+	}
+
+.ratingRow {
+	margin: 1em 0em 1.5em 0em;
+	}
+
+LABEL#textAreaReviews {
+	font-weight: normal;
+	margin: 1em 0em;
+	}
+
+#popupShippingEstimator, #popupSearchHelp, #popupAdditionalImage, #popupImage, #popupCVVHelp, #popupCouponHelp, #popupAtrribsQuantityPricesHelp, #infoShoppingCart {
+	background-color: #ffffff;
+	}
+.information {padding: 10px 3px; line-height: 150%;}
+
+#shoppingcartBody #shippingEstimatorContent {
+	clear: both;
+	}
+
+.seDisplayedAddressLabel {
+	background-color:#677B3E;
+	background-color:#9999CC;
+	text-align: center;
+	}
+.seDisplayedAddressInfo {
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
+	}
+#seShipTo {
+	padding: 0.2em;
+	}
+
+table {
+	border-collapse:collapse;
+}
+td {	text-align:left; }
+th {	text-align:center; padding: 0.5em; background-color:#677B3E; }
+table.content {font-size:0.8em; padding:0.5em; margin-left:1em;}
+table[border^="1"] {
+	border: 1px solid #989898;
+}
+table[border^="0"], table#contentMainWrapper, table#contentMainWrapper td, table#contentMainWrapper th, table#contentMainWrapper tbody, table#contentMainWrapper tr {
+	border: 0em solid;
+}
+/* footer tabs*/
+#custom_tab_news
+{
+	z-index: 30;
+}
+
+#custom_tab_events
+{
+	z-index: 20;
+}
+
+#custom_tab_alerts
+{
+	z-index: 10;
+}
+
+#custom_tabs li.on
+{
+	background-image: url('../../../images/footer_tab_wide-on.png');
+	color:#FFFFFF;
+}
+
+#custom_tabs li.off
+{
+	background-image: url('../../../images/footer_tab_wide-off.png');
+	color:#000000;
+}
+
+#custom_block
+{
+	width: 100%;
+	min-height: 145px;
+	padding: 20px 0;
+	margin: -10px 0 0 0;
+	background-color: #000;
+	position:absolute;
+	top: 32px;
+}
+
+#custom_col_container, #custom_col_news, #custom_col_events, #custom_col_alerts
+{
+/*zzz	width: 360px;*/
+	float:left
+}
+
+.custom_col_header
+{
+	color: #b06010;
+	font-size: 2.1em;
+	margin: 0 0 10px 0;
+}
+
+#custom_col_news, #custom_col_events, #custom_col_alerts
+{
+	min-height: 145px;
+	padding: 0 20px;
+	float: left;
+}
+
+.custom_item
+{
+	width: 90%;
+}
+
+.custom_item_event
+{
+	overflow:hidden;
+}
+
+.custom_item a
+{
+	color:#808184;
+}
+
+#custom_col_events, #custom_col_alerts
+{
+	display:none;
+}
+
+.custom_col_list li
+{
+	margin: 0 0 10px 0;
+}
+
+#custom_col_aboutus, #custom_col_expertise, #custom_col_search, #custom_col_info, #custom_col_login
+{
+	height: 145px;
+	overflow: hidden;
+	padding: 0 20px;
+	float: left;
+	border: 2px solid #615102;
+	border-width: 0px 0px 0px 2px;
+}
+
+.custom_header_links
+{
+	color: #FFF;
+	text-transform: UPPERCASE;
+	margin: 1px 0 0 0;
+}
+
+.custom_ul_links
+{
+	margin: 10px 0 0 0;
+}
+
+.custom_ul_links a
+{
+	color: #808184;
+}
+
+.custom_ul_links li
+{
+	padding: 0 0 4px 0;
+}
+
+#custom_list_social
+{
+	margin: 8px 0 0 0;
+}
+
+#custom_list_social li
+{
+	display: inline;
+	margin: 0 2px 0 0;
+}
+.sideBoxContent {
+	padding-top:0.3em;
+	margin-top:0em;
+}
+
+.mainTopBackground {
+	width:100%;
+	background-image:url('http://geeinc.ca/includes/templates/grayShades/images/bigstock-homePage.jpg');
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-color:#FFFFFF;
+	height: 425px;
+	margin:0em;
+	border:0em;
+	}
+.mainTopContentBox {
+	position: relative;
+	left:550px;
+	top:71px;
+	/*322 to bring down to top of image*/
+	width:300px;
+	height:300px;
+	background-color: #F0F8FF;
+	box-shadow: 10px 10px 5px #5B5B5B;
+}
+.mainTopContent {
+	font-size:2em;
+}
+.mainTopContent:before {
+	content: '\201C';
+}
+.mainTopContent:after {
+	content: '\201D';
+}
+.mainTopContent q:lang(en) {
+	quotes: '\2018' '\2019';
+}
