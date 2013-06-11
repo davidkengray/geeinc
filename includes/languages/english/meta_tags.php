@@ -17,8 +17,8 @@ define('SITE_TAGLINE', 'Providing Commercial Energy Management and Advocacy');
 define('CUSTOM_KEYWORDS', 'ecommerce, open source, shop, online shopping');
 
 // Home Page Only:
-  define('HOME_PAGE_META_DESCRIPTION', '');
-  define('HOME_PAGE_META_KEYWORDS', '');
+  define('HOME_PAGE_META_DESCRIPTION', 'Energy economics for your business and residential needs.');
+  define('HOME_PAGE_META_KEYWORDS', 'energy, economics, save money, advocacy, black and white report, Alberta, epcor, direct energy, meter reading, power bill, peak energy, power rates, measure electricity, service tariff, kW.h, annual consumption, regular billing demand');
 
   // NOTE: If HOME_PAGE_TITLE is left blank (default) then TITLE and SITE_TAGLINE will be used instead.
   define('HOME_PAGE_TITLE', ''); // usually best left blank

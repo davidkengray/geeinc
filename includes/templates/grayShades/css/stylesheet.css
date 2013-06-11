@@ -197,6 +197,7 @@ HR.small {
 	}
 #logoWrapper {
 	background-color: #7C7C99;
+	min-width:800px;
 	}
 #navColumnOneWrapper {
 	width:100%;
@@ -383,6 +384,7 @@ HR.small {
 	}
 #navEZPagesBackground {
 	background-color: #7C7C99;
+	min-width: 800px;
 	}
 #navEZPagesTop {
 	background-size:contain;
@@ -944,9 +946,10 @@ table[border^="0"], table#contentMainWrapper, table#contentMainWrapper td, table
 	padding-top:0.3em;
 	margin-top:0em;
 }
-
+/*Main page speach bubble on image - WARNING THIS SETS THE PAGE SIZE. All of these css attributes are added using the define pages editor for define_main_page. */
 .mainTopBackground {
 	width:100%;
+	min-width: 800px;
 	background-image:url('http://geeinc.ca/includes/templates/grayShades/images/bigstock-homePage.jpg');
 	background-size:contain;
 	background-repeat:no-repeat;
@@ -957,15 +960,15 @@ table[border^="0"], table#contentMainWrapper, table#contentMainWrapper td, table
 	}
 .mainTopContentBox {
 	position: relative;
-	left:550px;
-	top:71px;
-	width:300px;
-	height:300px;
+	left:500px;
+	top:51px;
+	width:210px;
+	height:210px;
 	background-color: #F0F8FF;
 	box-shadow: 10px 10px 5px #5B5B5B;
 }
 .mainTopContent {
-	font-size:2em;
+	font-size:1.4em;
 }
 .mainTopContent:before {
 	content: '\201C';
@@ -974,5 +977,39 @@ table[border^="0"], table#contentMainWrapper, table#contentMainWrapper td, table
 	content: '\201D';
 }
 .mainTopContent q:lang(en) {
+	quotes: '\2018' '\2019';
+}
+
+/*Advocacy page edits. Advocacy is an EZ page, it would be edited under Tools - EZ Pages */
+.advocacyTopBackground {
+	width:100%;
+	min-width: 800px;
+	background-image:url('http://geeinc.ca/includes/templates/grayShades/images/bigstock-advocacyPage.jpg');
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-color:#FFFFFF;
+	height: 534px;
+	margin:0em;
+	border:0em;
+	}
+.advocacyTopContentBox {
+	position: relative;
+	left:450px;
+	top:51px;
+	width:210px;
+	height:210px;
+	background-color: #F0F8FF;
+	box-shadow: 10px 10px 5px #5B5B5B;
+}
+.advocacyTopContent {
+	font-size:1.4em;
+}
+.advocacyTopContent:before {
+	content: '\201C';
+}
+.advocacyTopContent:after {
+	content: '\201D';
+}
+.advocacyTopContent q:lang(en) {
 	quotes: '\2018' '\2019';
 }
