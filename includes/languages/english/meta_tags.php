@@ -11,7 +11,7 @@
 define('TITLE', 'Gray Energy Economics Inc.');
 
 // Site Tagline
-define('SITE_TAGLINE', 'Providing Commercial Energy Management and Advocacy');
+define('SITE_TAGLINE', 'Business Advice on Heat and Power Purchasing');
 
 // Custom Keywords
 define('CUSTOM_KEYWORDS', 'ecommerce, open source, shop, online shopping');

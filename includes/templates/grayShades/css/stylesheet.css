@@ -28,7 +28,6 @@ body {
 	color: #000000;
 	background-color: #FFFFFF;
 	}
-
 a img {border: none; }
 
 a:link, #navEZPagesTOC ul li a {
@@ -209,6 +208,7 @@ HR.small {
 	margin: 0em;
 	} 
 #taglineWrapper {
+	min-width: 800px;
 	background-image:url('http://geeinc.ca/includes/templates/grayShades/images/GrayWideFinal.jpg');
 	background-size:contain;
 	background-repeat:no-repeat;
@@ -218,6 +218,8 @@ HR.small {
 	border:0em;
 }
 #tagline {
+	width:100%;
+	height:100%;
 	}
 	
 #sendSpendWrapper {
@@ -384,23 +386,24 @@ HR.small {
 	}
 #navEZPagesBackground {
 	background-color: #7C7C99;
-	min-width: 800px;
+	overflow: hidden;
 	}
 #navEZPagesTop {
 	background-size:contain;
 	background-repeat:no-repeat;
-	background-color:#FFFFFF;
 	margin: 0em 0em 0em 15%;
 	padding-left: 2em;
 	border: 0em;
 	background-color: #181818;
 	line-height: 3em;
 	vertical-align: middle;
+	min-width: 800px;
 	}
 #navEZPagesImage {
 	float: right;
 	/*85% to work with, want 15% of full size*/
 	width: 17.647%;
+	overflow: hidden;
 	background-color:#FFFFFF;
 	height: 3em;
 	}
@@ -446,8 +449,8 @@ HR.small {
 	background-color: #FFFFFF;
 	}
 .centerColumn {
-	height:500px;
-	overflow-x:scroll;
+	min-height: 500px;
+	overflow-x:hidden;
 	overflow-y:scroll;
 	border-right-width: 3px;
 	border-right-style: solid;
@@ -963,13 +966,14 @@ table[border^="0"], table#contentMainWrapper, table#contentMainWrapper td, table
 	left:500px;
 	top:51px;
 	width:210px;
-	height:210px;
+	height:auto;
 	background-color: #F0F8FF;
 	box-shadow: 10px 10px 5px #5B5B5B;
 }
 .mainTopContent {
 	font-size:1.4em;
 }
+/*
 .mainTopContent:before {
 	content: '\201C';
 }
@@ -979,7 +983,7 @@ table[border^="0"], table#contentMainWrapper, table#contentMainWrapper td, table
 .mainTopContent q:lang(en) {
 	quotes: '\2018' '\2019';
 }
-
+*/
 /*Advocacy page edits. Advocacy is an EZ page, it would be edited under Tools - EZ Pages */
 .advocacyTopBackground {
 	width:100%;
@@ -995,21 +999,62 @@ table[border^="0"], table#contentMainWrapper, table#contentMainWrapper td, table
 .advocacyTopContentBox {
 	position: relative;
 	left:450px;
-	top:51px;
+	top:61px;
 	width:210px;
-	height:210px;
+	height:auto;
 	background-color: #F0F8FF;
 	box-shadow: 10px 10px 5px #5B5B5B;
 }
 .advocacyTopContent {
 	font-size:1.4em;
 }
-.advocacyTopContent:before {
-	content: '\201C';
+/*Energy Checkup page edits. Energy Checkup is an EZ page, it would be edited under Tools - EZ Pages */
+.energyCheckTopBackground {
+	width:100%;
+	min-width: 800px;
+	background-image:url('http://geeinc.ca/includes/templates/grayShades/images/bigstock-energyCheckup.jpg');
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-color:#FFFFFF;
+	height: 532px;
+	margin:0em;
+	border:0em;
+	}
+.energyCheckTopContentBox {
+	position: relative;
+	left:100px;
+	top:61px;
+	width:210px;
+	height:auto;
+	background-color: #F0F8FF;
+	box-shadow: 10px 10px 5px #5B5B5B;
 }
-.advocacyTopContent:after {
-	content: '\201D';
+.energyCheckTopContent {
+	font-size:1.4em;
 }
-.advocacyTopContent q:lang(en) {
-	quotes: '\2018' '\2019';
+
+/*Energy Checkup page edits. Energy Checkup is an EZ page, it would be edited under Tools - EZ Pages */
+.energyMngTopBackground {
+	width:100%;
+	min-width: 800px;
+	background-image:url('http://geeinc.ca/includes/templates/grayShades/images/bigstock-Management.jpg');
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-color:#FFFFFF;
+	height: 533px;
+	margin:0em;
+	border:0em;
+	}
+.energyMngTopContentBox {
+	position: relative;
+	left:47px;
+	top:53px;
+	width:210px;
+	height:auto;
+	background-color: #F0F8FF;
+	box-shadow: 10px 10px 5px #5B5B5B;
 }
+.energyMngTopContent {
+	font-size:1.4em;
+}
+

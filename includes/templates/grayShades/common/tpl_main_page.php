@@ -137,6 +137,7 @@ if (!isset($flag_disable_left) || !$flag_disable_left) {
   */
  require($body_code); ?>
 
+
 <?php
   if (SHOW_BANNERS_GROUP_SET4 != '' && $banner = zen_banner_exists('dynamic', SHOW_BANNERS_GROUP_SET4)) {
     if ($banner->RecordCount() > 0) {

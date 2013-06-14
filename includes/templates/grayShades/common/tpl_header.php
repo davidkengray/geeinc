@@ -69,10 +69,17 @@ if (!isset($flag_disable_header) || !$flag_disable_header) {
 <!--eof-navigation display-->
 
 <!--bof-branding display-->
+<!--JM Modified to always display logo-->
 <div id="logoWrapper">
     <div id="logo"></div>
-    <div id="taglineWrapper">
-      <div id="tagline"></div>
+        <div id="taglineWrapper">
+          <?php
+                  if (HEADER_LOGO_LINK != '') {
+                  ?>
+                    <a href="<?php echo HEADER_LOGO_LINK;?>"><div id="tagline">&nbsp;</div></a>
+          <?php
+                  }
+          ?>
     </div>
 </div>
 <HR class="small clearBoth" />

@@ -23,6 +23,7 @@
   define('HEADER_LOGO_WIDTH', '');
   define('HEADER_LOGO_HEIGHT', '');
   define('HEADER_LOGO_IMAGE', '');
+  define('HEADER_LOGO_LINK','./');
 
 // header Search Button/Box Search Button
   define('HEADER_SEARCH_BUTTON','Search');
