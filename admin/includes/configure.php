@@ -15,13 +15,11 @@
  * WE RECOMMEND THAT YOU USE SSL PROTECTION FOR YOUR ENTIRE ADMIN:
  * To do that, make sure you use a "https:" URL for BOTH the HTTP_SERVER and HTTPS_SERVER entries:
  */
-  define('HTTP_SERVER', 'http://geeinc.ca');
-  define('HTTPS_SERVER', 'https://geeinc.ca');
-  define('HTTP_CATALOG_SERVER', 'http://geeinc.ca');
-  define('HTTPS_CATALOG_SERVER', 'https://geeinc.ca');
+  define('HTTP_SERVER', 'https://www.geeinc.ca');
+  define('HTTPS_SERVER', 'https://www.geeinc.ca');
 
   // secure webserver for admin?  Valid choices are 'true' or 'false' (including quotes).
-  define('ENABLE_SSL_ADMIN', 'false');
+  define('ENABLE_SSL_ADMIN', 'true');
 
   // secure webserver for storefront?  Valid choices are 'true' or 'false' (including quotes).
   define('ENABLE_SSL_CATALOG', 'false');
