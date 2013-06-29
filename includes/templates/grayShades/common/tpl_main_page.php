@@ -202,4 +202,15 @@ if (!isset($flag_disable_right) || !$flag_disable_right) {
   }
 ?>
 <!--eof- banner #6 display -->
+<!--bof - google analytics 
+Contribution Name: Simple Google Analytics
+Version Date: v 1.2.5c 04/13/2012-->
+<?php
+if (GOOGLE_ANALYTICS_TRACKING_TYPE == "Asynchronous") {
+// Do nothing
+} else {
+require(DIR_WS_TEMPLATE . 'google_analytics/google_analytics.php');
+}
+?>
+<!--eof = google analytics-->
 </body>
