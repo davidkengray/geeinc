@@ -8,6 +8,7 @@
  * @version $Id: linkpoint_api_database_tables.php 4612 2006-09-26 08:03:05Z drbyte $
  */
 
+
   define('TABLE_LINKPOINT_API', DB_PREFIX . 'linkpoint_api');
 
 ?>

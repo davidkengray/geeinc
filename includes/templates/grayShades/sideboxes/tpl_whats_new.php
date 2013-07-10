@@ -9,11 +9,11 @@
  */
   $content = "";
   $content .= '<div class="sideBoxContent">';
+  $content .= '<p class="sideBoxText littleText"><a href="http://www.geeinc.ca/pdf/RECGuide-2013-07-07.pdf" class="sidelink">Residential Energy Consumers&rsquo; Guide - July 2013</a></p>';
   $content .= '<p class="sideBoxText littleText"><a href="http://www.geeinc.ca/pdf/BlackAndWhite-2013-06-14.pdf" class="sidelink">There is Way More Hydro North of 60</a></p>';
 
   $content .= '<p class="sideBoxText littleText"><a href="http://geeinc.ca/pdf/RECGuide-2013-06-07.pdf" class="sidelink">Residential Energy Consumers&rsquo; Guide - June 2013</a></p>';
   $content .= '<p class="sideBoxText littleText"><a href="http://geeinc.ca/pdf/BlackAndWhite-2013-05-29.pdf" class="sidelink">Alberta has no utility debt</a></p>';
-  $content .= '<p class="sideBoxText littleText"><a href="http://geeinc.ca/pdf/BlackAndWhite-2013-05-15.pdf" class="sidelink">Is Your Grocer Green</a></p>';
   $content .= '</div>';
   ?>
 

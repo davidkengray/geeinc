@@ -32,8 +32,3 @@ Additional information is contained in the Zen Cart wiki.
 Adapted from ideas presented by
 Juxi Zoza
 03/15/05
-
-Cheet Sheet
-Update header with:
-languages/english/classic/header.php:define('HEADER_LOGO_IMAGE', 'logo.gif');
-languages/english/header.php:  define('HEADER_LOGO_IMAGE', 'logo.gif');
